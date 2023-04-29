@@ -73,7 +73,6 @@ textarea {
 }
 
 body {
-  background: #000;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -86,28 +85,42 @@ body {
 }
 
 .flex-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.header {
-  padding: 40px 0;
-}
-.header .flex-wrap__item:first-child {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.heading {
+  font-family: "Yellowtail";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 65px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #7EB693;
+}
+
+.title {
+  font-weight: 700;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+
+.link {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+  text-transform: capitalize;
+}
+
+.header .flex-wrap {
+  padding: 40px 0;
 }
 .header .header__shop {
   display: -webkit-box;
@@ -171,17 +184,54 @@ body {
           justify-content: space-between;
   gap: 40px;
 }
-.header__nav .nav__item {
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 0.36px;
-}
 .header__nav .nav__item:nth-child(4) {
   margin-right: 20px;
 }
-.header__nav .nav__item .nav__link {
-  color: #274C5B;
-}
 .header__nav .nav__item .nav__link.active {
   color: #7EB693;
+}
+
+.home {
+  background: url(/public/images/bg-header.jpg) no-repeat;
+  background-size: cover;
+}
+.home__text {
+  padding: 220px 0 250px;
+}
+.home__text .home__heading {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.home__text .home__title {
+  max-width: 500px;
+  font-size: 70px;
+  line-height: 84px;
+  margin-bottom: 28px;
+}
+.home__text .home__btn {
+  background: #EFD372;
+  border: 1px solid #EFD372;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 23px;
+  padding: 22px 9px 22px 33px;
+}
+.home__text .home__btn > div {
+  position: relative;
+  height: 38px;
+  width: 38px;
+  background: #274C5B;
+  border-radius: 50%;
+}
+.home__text .home__btn > div > img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
