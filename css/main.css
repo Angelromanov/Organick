@@ -99,7 +99,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 65px;
+  line-height: 64px;
   letter-spacing: 0.36px;
   text-transform: capitalize;
   color: #7EB693;
@@ -117,6 +117,30 @@ body {
   letter-spacing: 0.36px;
   color: #274C5B;
   text-transform: capitalize;
+}
+
+.description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+
+.name {
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.36px;
+  color: #274C5B;
+}
+
+.circle {
+  background-color: #FFF4CD;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
 }
 
 .header .flex-wrap {
@@ -212,6 +236,7 @@ body {
   margin-bottom: 28px;
 }
 .home__text .btn {
+  max-width: 220px;
   cursor: pointer;
   background: #EFD372;
   border: 1px solid #EFD372;
@@ -222,7 +247,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 23px;
+  gap: 22px;
   padding: 22px 9px 22px 33px;
 }
 .home__text .btn > div {
@@ -264,4 +289,107 @@ body {
   font-size: 40px;
   line-height: 52px;
   max-width: 265px;
+}
+
+.about {
+  background-color: #F9F8F8;
+  padding: 130px 0 140px;
+}
+.about .flex-wrap {
+  gap: 30px;
+}
+.about .flex-wrap .flex-wrap__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+.about .flex-wrap .flex-wrap__item:first-child {
+  padding: 47px 0;
+}
+.about__text .title {
+  max-width: 520px;
+  font-size: 45px;
+  line-height: 58px;
+  text-transform: capitalize;
+  margin-bottom: 23px;
+}
+.about__text .description {
+  margin-bottom: 59px;
+}
+.about__text .about__advantages {
+  margin-bottom: 45px;
+}
+.about__text .about__advantages .about__item:first-child > div {
+  position: relative;
+  padding: 27px 23px 27px 31px;
+}
+.about__text .about__advantages .about__item:first-child > div > div {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  -webkit-transform: translate(-90%, -45%);
+          transform: translate(-90%, -45%);
+  z-index: 2;
+}
+.about__text .about__advantages .about__item:last-child > div {
+  position: relative;
+  padding: 24px 22px 24px 26px;
+}
+.about__text .about__advantages .about__item:last-child > div > div {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  -webkit-transform: translate(-90%, -100%);
+          transform: translate(-90%, -100%);
+  z-index: 2;
+}
+.about__text .about__advantages .about__item > div {
+  min-width: 100px;
+  min-height: 100px;
+  margin-right: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  float: left;
+}
+.about__text .about__advantages .about__item > div > img {
+  position: relative;
+  z-index: 3;
+}
+.about__text .about__advantages .about__item .name {
+  margin-bottom: 9px;
+}
+.about__text .about__advantages .about__item .description {
+  margin-bottom: 25px;
+}
+.about__text .btn {
+  max-width: 200px;
+  cursor: pointer;
+  background: #274C5B;
+  border: 1px solid #274C5B;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  padding: 22px 9px 22px 33px;
+}
+.about__text .btn .link {
+  color: #ffffff;
+}
+.about__text .btn > div {
+  position: relative;
+  height: 38px;
+  width: 38px;
+  background: #335B6B;
+  border-radius: 50%;
+}
+.about__text .btn > div > img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
