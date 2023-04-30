@@ -192,23 +192,21 @@ body {
 }
 
 .home {
+  padding: 220px 0 250px;
   background: url(../images/bg-header.jpg) no-repeat;
   background-size: cover;
 }
-.home__text {
-  padding: 220px 0 250px;
-}
-.home__text .home__heading {
+.home__text .heading {
   display: inline-block;
   margin-bottom: 15px;
 }
-.home__text .home__title {
+.home__text .title {
   max-width: 500px;
   font-size: 70px;
   line-height: 84px;
   margin-bottom: 28px;
 }
-.home__text .home__btn {
+.home__text .btn {
   background: #EFD372;
   border: 1px solid #EFD372;
   border-radius: 16px;
@@ -221,17 +219,43 @@ body {
   gap: 23px;
   padding: 22px 9px 22px 33px;
 }
-.home__text .home__btn > div {
+.home__text .btn > div {
   position: relative;
   height: 38px;
   width: 38px;
   background: #274C5B;
   border-radius: 50%;
 }
-.home__text .home__btn > div > img {
+.home__text .btn > div > img {
   position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.baners {
+  padding: 140px 0;
+}
+.baners .flex-wrap__item {
+  padding: 105px 0 105px 55px;
+  min-width: 665px;
+  border-radius: 30px;
+}
+.baners .flex-wrap__item:first-child {
+  background: url(../images/banana.png) no-repeat;
+  background-size: cover;
+}
+.baners .flex-wrap__item:first-child .heading, .baners .flex-wrap__item:first-child .title {
+  color: #ffffff;
+}
+.baners .flex-wrap__item:last-child {
+  background: url(../images/persic.png) no-repeat;
+  background-size: cover;
+}
+.baners__text .title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  max-width: 265px;
 }
