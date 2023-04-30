@@ -123,6 +123,7 @@ body {
   padding: 40px 0;
 }
 .header .header__shop {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,6 +161,7 @@ body {
 }
 
 .logo {
+  cursor: pointer;
   padding: 8px 0;
 }
 
@@ -184,6 +186,9 @@ body {
           justify-content: space-between;
   gap: 40px;
 }
+.header__nav .nav__item {
+  cursor: pointer;
+}
 .header__nav .nav__item:nth-child(4) {
   margin-right: 20px;
 }
@@ -207,6 +212,7 @@ body {
   margin-bottom: 28px;
 }
 .home__text .btn {
+  cursor: pointer;
   background: #EFD372;
   border: 1px solid #EFD372;
   border-radius: 16px;
