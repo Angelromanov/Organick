@@ -439,7 +439,7 @@ body {
 }
 
 .products {
-  padding: 120px 0;
+  padding: 120px 0 140px;
 }
 .products__text {
   text-align: center;
@@ -487,4 +487,102 @@ body {
   height: 1px;
   background-color: #D4D4D4;
   margin-bottom: 10px;
+}
+
+.testimonial {
+  background: url(../images/bg-jestimonial.png) no-repeat;
+  background-size: cover;
+  padding: 130px 0 150px;
+}
+.testimonial__text {
+  text-align: center;
+}
+.testimonial__text > img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.testimonial__text .title {
+  margin-bottom: 60px;
+}
+.testimonial__text .stars {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2px;
+  margin-bottom: 35px;
+}
+.testimonial__text .stars > img {
+  height: 21px;
+}
+.testimonial__text .description {
+  margin: 0 auto;
+  max-width: 940px;
+  margin-bottom: 23px;
+}
+.testimonial__text .name {
+  display: block;
+  font-weight: 700;
+}
+.testimonial__text .type {
+  display: block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #525C60;
+  margin-bottom: 96px;
+}
+.testimonial hr {
+  margin: 0 auto;
+  width: 966px;
+  height: 2px;
+  background-color: #D4D4D4;
+  margin-bottom: 100px;
+}
+.testimonial .flex-wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 26px;
+}
+.testimonial .flex-wrap .status__item {
+  min-width: 250px;
+  min-height: 250px;
+  border-radius: 50%;
+  border: 6px solid #7EB693;
+  background-color: #F1F1F1;
+}
+.testimonial .flex-wrap .status__item .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 240px;
+  min-height: 240px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  color: #274C5B;
+}
+.testimonial .flex-wrap .status__item .wrap .status__number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: 0.36px;
+}
+.testimonial .flex-wrap .status__item .wrap .description {
+  color: #274C5B;
+  font-weight: 700;
 }
