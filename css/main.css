@@ -312,19 +312,24 @@ body {
 .baners {
   padding: 140px 0;
 }
-.baners .flex-wrap__item {
+.baners .flex-wrap {
+  gap: 50px;
+}
+.baners .flex-wrap .flex-wrap__item {
   padding: 105px 0 105px 55px;
-  min-width: 665px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
   border-radius: 30px;
 }
-.baners .flex-wrap__item:first-child {
+.baners .flex-wrap .flex-wrap__item:first-child {
   background: url(../images/banana.png) no-repeat;
   background-size: cover;
 }
-.baners .flex-wrap__item:first-child .heading, .baners .flex-wrap__item:first-child .title {
+.baners .flex-wrap .flex-wrap__item:first-child .heading, .baners .flex-wrap .flex-wrap__item:first-child .title {
   color: #ffffff;
 }
-.baners .flex-wrap__item:last-child {
+.baners .flex-wrap .flex-wrap__item:last-child {
   background: url(../images/persic.png) no-repeat;
   background-size: cover;
 }
