@@ -1,0 +1,17 @@
+mixin carts(description, images, alt, name, oldprice, price)
+    .grid-wrap__item
+        a(href="./index.html#products").description= description
+        a(href="./index.html#products")
+            img(src= images, alt= alt)
+            h3.name= name
+        hr
+        .info
+            .price-wrap
+                span.price-wrap__old.price= oldprice
+                span.price-wrap__current.price= price
+            .stars
+                img(src="./images/star.png", alt="Star")
+                img(src="./images/star.png", alt="Star")
+                img(src="./images/star.png", alt="Star")
+                img(src="./images/star.png", alt="Star")
+                img(src="./images/star.png", alt="Star")

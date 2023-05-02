@@ -1,0 +1,30 @@
+.baners{
+    padding: 140px 0;
+    .flex-wrap{
+        gap: 50px;
+        .flex-wrap__item{
+            padding: 105px 0 105px 55px;
+            flex: 1 1;
+            border-radius: 30px;
+            &:first-child{
+                background: url(../images/banana.png)  no-repeat;
+                background-size: cover;
+                .heading, .title{
+                    color: $white;
+                }
+            }
+            &:last-child{
+                background: url(../images/persic.png)  no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    &__text{
+        .title{
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 52px;
+            max-width: 265px;
+        }
+    }
+}

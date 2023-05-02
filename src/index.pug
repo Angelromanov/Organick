@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/main.css")
+        title Organick
+    body
+        header.header
+            div.container
+                div.flex-wrap
+                    .header__nav
+                        include ./components/logo.pug
+                        ul.nav
+                            li.nav__item
+                                a(href='#').nav__link.link.active Home
+                            li.nav__item
+                                a(href='./index.html#about').nav__link.link About us
+                            li.nav__item
+                                a(href='./index.html#products').nav__link.link Shop
+                            li.nav__item
+                                a(href='./index.html#').nav__link.link Pages
+                            li.nav__item
+                                a(href='./index.html#').nav__link.link Contact us
+                    div.header__shop
+                        div
+                            img(src="./images/shopping-cart.svg", alt="Shopping carts")
+                        span.header__size-shop Cart
+                            span 0
+        include ./components/home.pug
+        include ./components/baners.pug
+        include ./components/about.pug
+        include ./components/carts.pug
+        include ./components/products.pug
+        include ./components/testimonial.pug
+        include ./components/offer.pug
+        include ./components/eco.pug

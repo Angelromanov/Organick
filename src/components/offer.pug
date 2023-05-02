@@ -1,0 +1,14 @@
+section.offer
+    .container
+        .offer__text
+            .text
+                span.offer__heading.heading Offer Products
+                h2.offer__title.title We Offer Organic for You
+            a(href='./index.html#products').offer__btn.btn
+                span.link View All products
+                div
+                    img(src="./images/Vector.svg", alt="Vector")
+        .grid-wrap
+            +carts('Vegetable', './images/tomato.png', 'Tomato', 'Vegan Red Tomato', '$ 14.00 USD', '$ 9.37 USD')
+            +carts('Fruits', './images/almonts.png', 'Almonds', 'Organic Almonds', '$ 21.00 USD', '$ 18.00 USD')
+            +carts('Vegetable', './images/corn.png', 'Corn', 'Fresh Corn', '$ 21.23 USD', '$ 18.00 USD')

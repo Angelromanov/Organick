@@ -1,0 +1,42 @@
+.grid-wrap{
+    &__item{
+        border-radius: 30px;
+        padding: 30px;
+        background-color: $bg-color;
+        .info{
+            padding-bottom: 5px;
+        }
+        .description{
+            display: inline-block;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 27px;
+            background-color: $green-blue;
+            padding: 5px 20px;
+            color: $white;
+        }
+        a>img{
+            margin-bottom: 20px;
+        }
+        .name{
+            font-size: 22px;
+            margin-bottom: 11px;
+        }
+        .price-wrap__old{
+            font-weight: 400;
+            font-size: 17px;
+            text-decoration-line: line-through;
+            color: $old-price;
+        }
+        .price-wrap__current{
+            font-weight: 700;
+            color: $green-blue;
+        }
+        hr{
+            height: 1px;
+            background-color: $hr;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.products{
+    padding: 120px 0 140px;
+    &__text{
+        text-align: center;
+        padding-bottom: 40px;
+        .title{
+            text-transform: capitalize;
+        }
+    }
+}

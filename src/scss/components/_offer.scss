@@ -1,0 +1,39 @@
+.offer{
+    padding: 140px 0 160px;
+    background: $green-blue;
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 45px;
+        .title{
+            text-transform: capitalize;
+            color: $white;
+        }
+        .btn{
+            margin-right: 10px;
+            max-width: 267px;
+            cursor: pointer;
+            background: $gold;
+            border: 1px solid $gold;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            padding: 22px 9px 22px 33px;
+            > div{
+                position: relative;
+                height: 38px;
+                width: 38px;
+                background: $green-blue;
+                border-radius: 50%;
+                > img{
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}

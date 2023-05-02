@@ -1,0 +1,22 @@
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        &__item{
+            cursor: pointer;
+            &:nth-child(4){
+                margin-right: 20px;
+            }
+            .nav__link{
+                &.active{
+                    color: $green;
+                }
+            }
+        }
+    }
+}

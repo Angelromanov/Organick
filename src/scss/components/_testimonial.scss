@@ -1,0 +1,84 @@
+.testimonial{
+    background: url(../images/bg-jestimonial.png) no-repeat;
+    background-size: cover;
+    padding: 130px 0 150px;
+    &__text{
+        text-align: center;
+        > img{
+            margin:  0 auto;
+            margin-bottom: 20px;
+        }
+        .title{
+            margin-bottom: 60px;
+        }
+        .stars{
+            justify-content: center;
+            gap: 2px;
+            margin-bottom: 35px;
+            > img{
+                height: 21px;
+            }
+        }
+        .description{
+            margin: 0 auto;
+            max-width: 940px;
+            margin-bottom: 23px;
+        }
+        .name{
+            display: block;
+            font-weight: 700;
+        }
+        .type{
+            display: block;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: 0.36px;
+            color: $gray;
+            margin-bottom: 96px;
+        }
+    }
+    hr{
+        margin: 0 auto;
+        width: 966px;
+        height: 2px;
+        background-color: $hr;
+        margin-bottom: 100px;
+    }
+    .flex-wrap{
+        justify-content: center;
+        gap: 26px;
+        .status__item{
+            min-width: 250px;
+            min-height: 250px;
+            border-radius: 50%;
+            border: 6px solid $green;
+            background-color:  #F1F1F1;;
+            .wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-width: 240px;
+                min-height: 240px;
+                border-radius: 50%;
+                border: 5px solid $white;
+                color: $green-blue;
+                .status__number{
+                    font-weight: 700;
+                    font-size: 42px;
+                    line-height: 55px;
+                    text-align: center;
+                    letter-spacing: 0.36px;
+                }
+                .description{
+                    color: $green-blue;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

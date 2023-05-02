@@ -1,0 +1,101 @@
+.about{
+    background-color: $bg-color;
+    padding: 130px 0 140px;
+    .flex-wrap{
+        gap: 30px;
+        .flex-wrap__item{
+            flex: 1 1;
+            &:first-child{
+                padding: 47px 0;
+            }
+        }
+    }
+    &__text{
+        .title{
+            max-width: 520px;
+            font-size: 45px;
+            line-height: 58px;
+            text-transform: capitalize;
+            margin-bottom: 23px;
+        }
+        .description{
+            margin-bottom: 59px;
+        }
+        .about__advantages{
+            margin-bottom: 45px;
+            .about__item{
+                &:first-child{
+                    > div{
+                        position: relative;
+                        padding: 27px 23px 27px 31px;
+                        > div{
+                            position: absolute;
+                            top: 45%;
+                            left: 45%;
+                            transform: translate(-90%, -45%);
+                            z-index: 2;
+                        }
+                    }
+                }
+                &:last-child{
+                    > div{
+                        position: relative;
+                        padding: 24px 22px 24px 26px;
+                        > div{
+                            position: absolute;
+                            top: 70%;
+                            left: 45%;
+                            transform: translate(-90%, -100%);
+                            z-index: 2;
+                        }
+                    }
+                }
+                > div{
+                    min-width: 100px;
+                    min-height: 100px;
+                    margin-right: 20px;
+                    background: $white;
+                    border-radius: 20px;
+                    float: left;
+                    > img{
+                        position: relative;
+                        z-index: 3;
+                    }
+                }
+                .name{
+                    margin-bottom: 9px;
+                }
+                .description{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        .btn{
+            max-width: 200px;
+            cursor: pointer;
+            background: $green-blue;
+            border: 1px solid $green-blue;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 22px 9px 22px 33px;
+            .link{
+                color: $white;
+            }
+            > div{
+                position: relative;
+                height: 38px;
+                width: 38px;
+                background: $light-green-blue;
+                border-radius: 50%;
+                > img{
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
