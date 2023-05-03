@@ -697,3 +697,116 @@ body {
   padding: 30px 78px;
   font-weight: 700;
 }
+
+.forms {
+  padding: 30px 0;
+}
+.forms .flex-wrap {
+  background: url(../images/form.png) no-repeat;
+  padding: 100px 70px;
+}
+.forms .forms__email {
+  padding: 20px 10px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.forms .forms__email input {
+  border-radius: 16px;
+  border: 1px solid #CCCCCC;
+  min-width: 350px;
+  padding: 35px 0 30px 30px;
+}
+.forms .forms__email input::-webkit-input-placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.forms .forms__email input::-moz-placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.forms .forms__email input:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.forms .forms__email input::-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.forms .forms__email input::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.forms .title {
+  max-width: 325px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.36px;
+}
+.forms .btn {
+  max-width: 200px;
+  cursor: pointer;
+  background: #274C5B;
+  border: 1px solid #274C5B;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  padding: 22px 9px 22px 33px;
+}
+.forms .btn .link {
+  color: #ffffff;
+}
+.forms .btn > div {
+  position: relative;
+  height: 38px;
+  width: 38px;
+  background: #335B6B;
+  border-radius: 50%;
+}
+.forms .btn > div > img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
