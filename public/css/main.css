@@ -92,6 +92,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 30px;
 }
 
 .heading {
@@ -669,4 +670,30 @@ body {
 }
 .eco__text .description {
   margin-bottom: 10px;
+}
+
+.pages {
+  background-color: #EFF6F1;
+  padding: 140px 0;
+}
+.pages .flex-wrap__item {
+  position: relative;
+  padding: 242px 74px;
+}
+.pages .flex-wrap__item:first-child {
+  padding: 242px 90px;
+  background: url(../images/fruit.png) no-repeat;
+}
+.pages .flex-wrap__item:nth-child(2) {
+  background: url(../images/organic.png) no-repeat;
+}
+.pages .flex-wrap__item:last-child {
+  background: url(../images/nuts.png) no-repeat;
+}
+.pages .flex-wrap__item .name {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px 78px;
+  font-weight: 700;
 }

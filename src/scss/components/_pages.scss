@@ -1,0 +1,25 @@
+.pages{
+    background-color: $bg-pages;
+    padding: 140px 0;
+    .flex-wrap__item{
+        position: relative;
+        padding: 242px 74px;
+        &:first-child{
+            padding: 242px 90px;
+            background: url(../images/fruit.png) no-repeat;
+        }
+        &:nth-child(2){
+            background: url(../images/organic.png) no-repeat;
+        }
+        &:last-child{
+            background: url(../images/nuts.png) no-repeat;
+        }
+        .name{
+            display: inline-block;
+            background-color: $white;
+            border-radius: 20px;
+            padding: 30px 78px;
+            font-weight: 700;
+        }
+    }
+}
