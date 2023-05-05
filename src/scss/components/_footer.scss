@@ -1,0 +1,91 @@
+.footer{
+    padding: 55px 0 0;
+    .footer-wrap{
+        padding-bottom: 85px;
+        display: flex;
+        justify-content:baseline;
+        gap: 20px;
+        &__item{
+            &:first-child{
+                text-align: right;
+                padding-left: 75px;
+                .title{
+                    font-size: 30px;
+                    line-height: 42px;
+                    margin-bottom: 35px;
+                }
+                .contacts{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    padding-bottom: 40px;
+                    .email,.phone,.maps{
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-size: 18px;
+                        letter-spacing: 0.36px;
+                        color: $gray;
+                        gap:5px;
+                        .contacts__name{
+                            font-weight: 700;
+                            line-height: 23px;
+                        }
+                        .link{
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-size: 18px;
+                            letter-spacing: 0.36px;
+                            color: $gray;
+                            font-weight: 400;
+                            line-height: 29px;
+                        }
+                    }
+                    .email .link{
+                        text-transform: lowercase;
+                    }
+                }
+            }
+            &:nth-child(2){
+                border-left: 1px solid #D5D5D5;
+                border-right: 1px solid #D5D5D5;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 50px;
+                .logo{
+                    padding-top: 0;
+                    padding-bottom: 8px;
+                }
+                .description{
+                    max-width: 567px;
+                }
+            }
+            &:last-child{
+                .list{
+                    &__item{
+                        line-height: 29px;
+                        .link{
+                            font-size: 18px;
+                            display: inline-block;
+                            color: $gray;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                .title{
+                    font-size: 30px;
+                    line-height: 42px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    iframe{
+        width: 100%;
+        height: 660px;
+    }
+}

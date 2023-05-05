@@ -1,2 +1,37 @@
 footer.footer
-    
+    div.container
+        .footer-wrap 
+            .footer-wrap__item
+                h2.title Contact Us
+                .contacts#contacts
+                    .email
+                        span.contacts__name Email
+                        a.link(href="mailto:needhelp@organick.com") needhelp@organick.com
+                    .phone
+                        span.contacts__name Phone
+                        a.link(href="tel:123 (1254) 1452") 123 (1254) 1452
+                    .maps
+                        span.contacts__name Address
+                        a.link(href="https://goo.gl/maps/c9LspkkAG9SHpfGo8", target="_blank") 88 Road, Brooklyn Street, USA
+            .footer-wrap__item 
+                include ./logo.pug
+                p.description We are a popular and farming company aspiring to be a leader in the Organic food industry.
+                .social 
+                a(href="https://ru-ru.facebook.com/")
+                a.ico.ico--tw(href="https://twitter.com/")
+                a.ico.ico--inst(href="https://www.instagram.com/")
+                a.ico.ico--pint(href="https://ru.pinterest.com/")
+            .footer-wrap__item
+                h2.title Utility Pages
+                ul.list 
+                    li.list__item 
+                        a.link Style Guide 
+                    li.list__item 
+                        a.link Protected
+                    li.list__item 
+                        a.link Page Not Found
+                    li.list__item 
+                        a.link Changelog
+                    li.list__item 
+                        a.link Licenses
+    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96847.13241815155!2d-74.09388106582968!3d40.66353463616592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b84595d61fd%3A0xc00ede9005b9a8a5!2zODggQnJvb2tseW4gQXZlLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0KjQkA!5e0!3m2!1sru!2sby!4v1682362162694!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade")
