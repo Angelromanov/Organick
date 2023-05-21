@@ -1,11 +1,17 @@
 .baners{
     padding: 140px 0;
+    @media (max-width:1024px){
+        padding: 100px 0;
+    }
     .flex-wrap{
         gap: 50px;
         .flex-wrap__item{
             padding: 105px 0 105px 55px;
             flex: 1 1;
             border-radius: 30px;
+            @media (max-width:1024px){
+                padding: 80px 0 80px 30px;
+            }
             &:first-child{
                 background: url(../images/banana.png)  no-repeat;
                 background-size: cover;
