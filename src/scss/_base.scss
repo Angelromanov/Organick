@@ -43,6 +43,14 @@ body{
     font-weight: 700;
     letter-spacing: 0.36px;
     color: $green-blue;
+    @media (max-width:426px){
+        font-size: 35px;
+        line-height: 45px;
+    }
+    @media (max-width:320px) {
+        font-size: 25px;
+        line-height: 35px;
+    }
 }
 
 .link{
@@ -51,6 +59,10 @@ body{
     letter-spacing: 0.36px;
     color: $green-blue;
     text-transform: capitalize;
+    @media (max-width:376px){
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .description{
@@ -61,6 +73,10 @@ body{
     line-height: 32px;
     letter-spacing: 0.36px;
     color: $gray;
+    @media (max-width:426px){
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 .name{
@@ -68,6 +84,10 @@ body{
     line-height: 35px;
     letter-spacing: 0.36px;
     color: $green-blue;
+    @media (max-width:426px){
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 .circle{
@@ -81,11 +101,26 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    @media (max-width:1024px){
+        grid-template-columns: 1fr 1fr;
+        padding: 0 100px;
+    }
+    @media (max-width:768px){
+        padding: 0;
+    }
+    @media (max-width:426px){
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
 }
 
 .price-wrap{
     display: flex;
     gap: 12px;
+    @media (max-width:768px){
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .price{
@@ -94,6 +129,10 @@ body{
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.36px;
+    @media (max-width:320px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 .info{

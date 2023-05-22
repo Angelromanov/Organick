@@ -1,5 +1,11 @@
 .products{
     padding: 120px 0 140px;
+    @media (max-width:1024px){
+        padding: 100px 0;
+    }
+    @media (max-width:376px){
+        padding: 70px 0;
+    }
     &__text{
         text-align: center;
         padding-bottom: 40px;

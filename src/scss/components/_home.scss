@@ -9,6 +9,9 @@
         background: #f2f0f1;
         padding: 100px 0;
     }
+    @media (max-width:376px){
+        padding: 70px 0;
+    }
     &__text{
         @media (max-width:426px) {
             display: flex;

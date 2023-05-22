@@ -126,6 +126,18 @@ body {
   letter-spacing: 0.36px;
   color: #274C5B;
 }
+@media (max-width: 426px) {
+  .title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 320px) {
+  .title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
 
 .link {
   font-size: 20px;
@@ -133,6 +145,12 @@ body {
   letter-spacing: 0.36px;
   color: #274C5B;
   text-transform: capitalize;
+}
+@media (max-width: 376px) {
+  .link {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .description {
@@ -144,12 +162,24 @@ body {
   letter-spacing: 0.36px;
   color: #525C60;
 }
+@media (max-width: 426px) {
+  .description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 
 .name {
   font-size: 25px;
   line-height: 35px;
   letter-spacing: 0.36px;
   color: #274C5B;
+}
+@media (max-width: 426px) {
+  .name {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .circle {
@@ -166,12 +196,40 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+@media (max-width: 1024px) {
+  .grid-wrap {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 100px;
+  }
+}
+@media (max-width: 768px) {
+  .grid-wrap {
+    padding: 0;
+  }
+}
+@media (max-width: 426px) {
+  .grid-wrap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+  }
+}
 
 .price-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+}
+@media (max-width: 768px) {
+  .price-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
 }
 
 .price {
@@ -180,6 +238,12 @@ body {
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.36px;
+}
+@media (max-width: 320px) {
+  .price {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .info {
@@ -400,6 +464,11 @@ body {
     padding: 100px 0;
   }
 }
+@media (max-width: 376px) {
+  .home {
+    padding: 70px 0;
+  }
+}
 @media (max-width: 426px) {
   .home__text {
     display: -webkit-box;
@@ -484,6 +553,11 @@ body {
     padding: 100px 0;
   }
 }
+@media (max-width: 376px) {
+  .baners {
+    padding: 70px 0;
+  }
+}
 .baners .flex-wrap {
   gap: 50px;
 }
@@ -547,6 +621,11 @@ body {
     padding: 100px 0;
   }
 }
+@media (max-width: 376px) {
+  .about {
+    padding: 70px 0;
+  }
+}
 .about .flex-wrap {
   gap: 30px;
 }
@@ -564,20 +643,29 @@ body {
   }
 }
 @media (max-width: 1024px) {
+  .about .flex-wrap .flex-wrap__item:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
   .about__text {
     text-align: center;
   }
 }
 .about__text .title {
   max-width: 520px;
-  font-size: 45px;
-  line-height: 58px;
   text-transform: capitalize;
   margin-bottom: 23px;
 }
 @media (max-width: 1024px) {
   .about__text .title {
     margin: 0 auto 23px;
+    text-align: center;
   }
 }
 .about__text .description {
@@ -587,6 +675,12 @@ body {
   .about__text .description {
     max-width: 700px;
     margin: 0 auto 59px;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+  .about__text .description {
+    margin-bottom: 30px;
   }
 }
 .about__text .about__advantages {
@@ -595,6 +689,11 @@ body {
 .about__text .about__advantages .about__item:first-child > div {
   position: relative;
   padding: 27px 23px 27px 31px;
+}
+@media (max-width: 376px) {
+  .about__text .about__advantages .about__item:first-child > div {
+    display: none;
+  }
 }
 .about__text .about__advantages .about__item:first-child > div > div {
   position: absolute;
@@ -607,6 +706,11 @@ body {
 .about__text .about__advantages .about__item:last-child > div {
   position: relative;
   padding: 24px 22px 24px 26px;
+}
+@media (max-width: 376px) {
+  .about__text .about__advantages .about__item:last-child > div {
+    display: none;
+  }
 }
 .about__text .about__advantages .about__item:last-child > div > div {
   position: absolute;
@@ -630,11 +734,25 @@ body {
 }
 .about__text .about__advantages .about__item .name {
   margin-bottom: 9px;
+  text-align: left;
+}
+@media (max-width: 376px) {
+  .about__text .about__advantages .about__item .name {
+    text-align: center;
+  }
 }
 .about__text .about__advantages .about__item .description {
   margin-bottom: 25px;
+  text-align: left;
+}
+@media (max-width: 376px) {
+  .about__text .about__advantages .about__item .description {
+    max-width: 300px;
+    text-align: center;
+  }
 }
 .about__text .btn {
+  margin: auto;
   max-width: 200px;
   cursor: pointer;
   background: #274C5B;
@@ -648,6 +766,11 @@ body {
           align-items: center;
   gap: 24px;
   padding: 22px 9px 22px 33px;
+}
+@media (max-width: 426px) {
+  .about__text .btn {
+    padding: 10px 9px 10px 33px;
+  }
 }
 .about__text .btn .link {
   color: #ffffff;
@@ -698,6 +821,12 @@ body {
   text-decoration-line: line-through;
   color: #B8B8B8;
 }
+@media (max-width: 320px) {
+  .grid-wrap__item .price-wrap__old {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
 .grid-wrap__item .price-wrap__current {
   font-weight: 700;
   color: #274C5B;
@@ -710,6 +839,16 @@ body {
 
 .products {
   padding: 120px 0 140px;
+}
+@media (max-width: 1024px) {
+  .products {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 376px) {
+  .products {
+    padding: 70px 0;
+  }
 }
 .products__text {
   text-align: center;

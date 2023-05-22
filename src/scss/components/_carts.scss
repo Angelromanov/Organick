@@ -28,6 +28,10 @@
             font-size: 17px;
             text-decoration-line: line-through;
             color: $old-price;
+            @media (max-width:320px) {
+                font-size: 12px;
+                line-height: 20px;
+            }
         }
         .price-wrap__current{
             font-weight: 700;
