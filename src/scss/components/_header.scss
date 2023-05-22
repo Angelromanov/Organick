@@ -1,8 +1,8 @@
 .header{
     .flex-wrap{
         padding: 40px 0;
-        justify-content: center;
         @media (max-width:1024px){
+            justify-content: center;
             padding: 20px 0;
         }
     }
@@ -13,11 +13,13 @@
         display: none;
     }
     .menu__btn {
+        background-color: $green-blue;
+        border-radius: 50%;
         align-items: center; 
         position: fixed;
         right: 20px;
-        width: 26px;
-        height: 26px;
+        width: 35px;
+        height: 35px;
         cursor: pointer;
         z-index: 2000;
     }
@@ -27,8 +29,8 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 2px;
-    background-color: #000;
+    height: 3px;
+    background-color: $white;
     }
     .menu__btn > span::before {
     content: '';

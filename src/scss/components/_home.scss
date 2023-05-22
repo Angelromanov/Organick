@@ -5,7 +5,17 @@
     @media (max-width:1024px){
         padding: 150px 0;
     }
+    @media (max-width:426px) {
+        background: #f2f0f1;
+        padding: 100px 0;
+    }
     &__text{
+        @media (max-width:426px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .heading{
             display: inline-block;
             margin-bottom: 15px;
@@ -15,6 +25,16 @@
             font-size: 70px;
             line-height: 84px;
             margin-bottom: 28px;
+            @media (max-width:768px) {
+                font-size: 60px;
+                line-height: 60px;
+                max-width: 450px;
+            }
+            @media (max-width:426px) {
+                font-size: 40px;
+                padding: 0 20px;
+                text-align: center;
+            }
         }
         .btn{
             max-width: 220px;
@@ -26,6 +46,9 @@
             align-items: center;
             gap: 22px;
             padding: 22px 9px 22px 33px;
+            @media (max-width:426px) {
+                padding: 10px 9px 10px 33px;
+            }
             > div{
                 position: relative;
                 height: 38px;
