@@ -1,18 +1,55 @@
 .pages{
     background-color: $bg-pages;
     padding: 140px 0;
+    @media (max-width:1024px) {
+        padding: 100px 0;
+    }
+    @media (max-width:376px){
+        padding: 70px 0;
+    }
+    .flex-wrap{
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media (max-width:768px) {
+            gap: 10px;
+         }
+    }
     .flex-wrap__item{
         position: relative;
         padding: 242px 74px;
+        @media (max-width:1024px) {
+            padding: 200px 34px;
+        }
+        @media (max-width:768px) {
+            padding: 150px 34px;
+            margin: auto;
+        }
+        @media (max-width:426px) {
+            padding: 142px 80px;
+            
+        }
         &:first-child{
             padding: 242px 90px;
             background: url(../images/fruit.png) no-repeat;
+            background-position: center;
+            @media (max-width:1024px) {
+                padding: 200px 40px;
+            }
+            @media (max-width:768px) {
+                padding: 150px 40px;
+            }
+            @media (max-width:426px) {
+                padding: 142px 90px;
+            }
         }
         &:nth-child(2){
             background: url(../images/organic.png) no-repeat;
+            background-position: center;
         }
         &:last-child{
             background: url(../images/nuts.png) no-repeat;
+            background-position: center;
         }
         .name{
             display: inline-block;
@@ -20,6 +57,13 @@
             border-radius: 20px;
             padding: 30px 78px;
             font-weight: 700;
+            @media (max-width:1024px) {
+                padding: 20px 48px;
+            }
+            @media (max-width:768px) {
+                text-align: center;
+                padding: 10px 28px;
+            }
         }
     }
 }

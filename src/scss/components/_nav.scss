@@ -1,12 +1,12 @@
 .header__nav{
     display: flex;
     align-items: center;
-    gap: 120px;
+    justify-content: space-between;
+    flex: 1 1;
     .nav{
         display: flex;
         justify-content: space-between;
         gap: 40px;
-        margin-right: 255px;
         &__item{
             cursor: pointer;
             &:nth-child(4){

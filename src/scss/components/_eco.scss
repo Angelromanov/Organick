@@ -8,6 +8,9 @@
         max-width: 720px;
         background: $white;
         border-radius: 30px;
+        @media (max-width:426px) {
+            margin-right: auto;
+        }
         .title{
             max-width: 310px;
             text-transform: capitalize;

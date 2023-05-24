@@ -2,7 +2,20 @@
     padding: 30px 0;
     .flex-wrap{
         background: url(../images/form.png) no-repeat;
+        background-size: cover;
         padding: 100px 70px;
+        @media (max-width:1024px) {
+            flex-direction: column;
+            justify-content: center;
+            gap:10px;
+            padding: 80px 50px;
+        }
+        @media (max-width:768px) {
+            padding: 60px 30px;
+        }
+        @media (max-width:426px) {
+            padding: 50px 30px;
+        }
     }
     .forms__email{
         padding: 20px 10px 20px 0;
@@ -10,6 +23,15 @@
         justify-content: space-between;
         align-items: center;
         gap: 10px;
+        @media (max-width:1024px) {
+            justify-content: center;
+        }
+        @media (max-width:768px) {
+            padding: 15px 5px 15px 0;
+        }
+        @media (max-width:426px) {
+            flex-direction: column;
+        }
         input{
             border-radius: 16px;
             border: 1px solid #CCCCCC;
@@ -24,6 +46,14 @@
                 letter-spacing: 0.36px;
                 color: $gray;
             }
+            @media (max-width:768px) {
+                padding: 30px 0 25px 25px;
+                min-width: 300px;
+            }
+            @media (max-width:426px) {
+                padding: 25px 0 20px 20px;
+                min-width: 250px;
+            }
         }
     }
     .title{
@@ -34,6 +64,16 @@
         font-size: 50px;
         line-height: 60px;
         letter-spacing: 0.36px;
+        @media (max-width:1024px) {
+           margin: auto;
+           max-width: 600px;
+           text-align: center;
+        }
+        @media (max-width:426px) {
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+        }
     }
     .btn{
         max-width: 200px;
@@ -45,6 +85,9 @@
         align-items: center;
         gap: 24px;
         padding: 22px 9px 22px 33px;
+        @media (max-width:768px) {
+            padding: 15px 9px 15px 33px;
+        }
         .link{
             color: $white;
         }

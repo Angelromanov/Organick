@@ -114,7 +114,6 @@
             }
         }
         .btn{
-            margin: auto;
             max-width: 200px;
             cursor: pointer;
             background: $green-blue;
@@ -124,6 +123,9 @@
             align-items: center;
             gap: 24px;
             padding: 22px 9px 22px 33px;
+            @media (max-width:1024px) {
+                margin: auto;
+            }
             @media (max-width:426px) {
                 padding: 10px 9px 10px 33px;
             }
