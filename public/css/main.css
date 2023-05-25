@@ -932,6 +932,7 @@ body {
 .testimonial {
   background: url(../images/bg-jestimonial.png) no-repeat;
   background-size: contain;
+  background-position: top center;
   padding: 130px 0 150px;
 }
 @media (max-width: 1024px) {
@@ -1001,16 +1002,6 @@ body {
   height: 2px;
   background-color: #D4D4D4;
   margin-bottom: 100px;
-}
-@media (max-width: 1024px) {
-  .testimonial hr {
-    width: 800px;
-  }
-}
-@media (max-width: 768px) {
-  .testimonial hr {
-    width: 600px;
-  }
 }
 .testimonial .flex-wrap {
   -webkit-box-pack: center;
