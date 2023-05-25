@@ -43,6 +43,10 @@ body{
     font-weight: 700;
     letter-spacing: 0.36px;
     color: $green-blue;
+    @media (max-width:768px){
+        font-size: 40px;
+        line-height: 50px;
+    }
     @media (max-width:426px){
         font-size: 35px;
         line-height: 45px;
@@ -111,23 +115,21 @@ body{
     grid-gap: 20px;
     @media (max-width:1024px){
         grid-template-columns: 1fr 1fr;
-        padding: 0 100px;
     }
     @media (max-width:768px){
-        padding: 0;
+        gap: 5px;
     }
-    @media (max-width:426px){
+    @media (max-width:450px){
         grid-template-columns: 1fr;
-        padding: 0 30px;
     }
 }
 
 .price-wrap{
     display: flex;
     gap: 12px;
-    @media (max-width:768px){
-        flex-direction: column;
-        gap: 0;
+    @media (max-width:768px) {
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 
@@ -146,6 +148,9 @@ body{
 .info{
     display: flex;
     justify-content: space-between;
+    @media (max-width:768px) {
+        flex-wrap: wrap;
+    }
 }
 
 .stars{

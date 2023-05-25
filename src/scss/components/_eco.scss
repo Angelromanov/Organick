@@ -8,8 +8,12 @@
         max-width: 720px;
         background: $white;
         border-radius: 30px;
-        @media (max-width:426px) {
+        @media (max-width:768px) {
+            padding: 30px 30px 35px 50px;
             margin-right: auto;
+        }
+        @media (max-width:426px) {
+            padding: 20px 20px 25px 40px;
         }
         .title{
             max-width: 310px;
@@ -21,6 +25,10 @@
             line-height: 32px;
             margin-bottom: 5px;
             text-transform: capitalize;
+            @media (max-width:376px) {
+                font-size: 18px;
+                line-height: 22px;
+            }
         }
         .description{
             margin-bottom: 10px;

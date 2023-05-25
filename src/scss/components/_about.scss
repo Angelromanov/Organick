@@ -45,6 +45,9 @@
                 margin: 0 auto 59px;
                 text-align: center;
             }
+            @media (max-width:768px){
+                max-width: 500px;
+            }
             @media (max-width:376px){
                 margin-bottom: 30px;
             }
@@ -56,7 +59,7 @@
                     > div{
                         position: relative;
                         padding: 27px 23px 27px 31px;
-                        @media (max-width:376px){
+                        @media (max-width:768px){
                             display: none;
                         }
                         > div{
@@ -72,7 +75,7 @@
                     > div{
                         position: relative;
                         padding: 24px 22px 24px 26px;
-                        @media (max-width:376px){
+                        @media (max-width:768px){
                             display: none;
                         }
                         > div{
@@ -99,16 +102,19 @@
                 .name{
                     margin-bottom: 9px;
                     text-align: left;
-                    @media (max-width:376px){
+                    @media (max-width:768px){
                         text-align: center;
                     }
                 }
                 .description{
                     margin-bottom: 25px;
                     text-align: left;
+                    @media (max-width:768px){
+                        max-width: 500px;
+                        text-align: center;
+                    }
                     @media (max-width:376px){
                         max-width: 300px;
-                        text-align: center;
                     }
                 }
             }

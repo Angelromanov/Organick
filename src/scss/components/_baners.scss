@@ -8,8 +8,9 @@
     }
     .flex-wrap{
         gap: 50px;
-        @media (max-width:426px){
+        @media (max-width:768px){
             flex-direction: column;
+            padding: 0 30px;
         }
         .flex-wrap__item{
             padding: 105px 0 105px 55px;
@@ -18,16 +19,25 @@
             @media (max-width:1024px){
                 padding: 80px 0 80px 30px;
             }
+            @media (max-width:426px){
+                padding: 80px 0;
+            }
             &:first-child{
                 background: url(../images/banana.png)  no-repeat;
                 background-size: cover;
                 .heading, .title{
                     color: $white;
                 }
+                @media (max-width:426px){
+                    background: #ef5e85;
+                }
             }
             &:last-child{
                 background: url(../images/persic.png)  no-repeat;
                 background-size: cover;
+                @media (max-width:426px){
+                    background:  #e9eef2;
+                }
             }
         }
     }
@@ -40,12 +50,17 @@
             @media (max-width:426px) {
                 font-size: 35px;
                 line-height: 45px;
+                margin: auto;
             }
             @media (max-width:320px) {
                 max-width: 200px;
                 font-size: 30px;
                 line-height: 40px;
             }
+        }
+        @media (max-width:426px){
+           margin: 0 auto;
+           text-align: center;
         }
     }
 }
