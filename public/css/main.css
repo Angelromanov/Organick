@@ -398,7 +398,7 @@ body {
     visibility: hidden;
     top: 0;
     right: -100%;
-    width: 300px;
+    width: 50%;
     height: 100%;
     margin: 0;
     padding: 80px 0;
@@ -433,8 +433,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .header #menu__toggle:checked ~ .header__nav .nav {
     margin-right: 0;
@@ -485,6 +486,12 @@ body {
   left: -50%;
   -webkit-transform: translate(-30%, 10%);
           transform: translate(-30%, 10%);
+}
+@media (max-width: 1024px) {
+  .header .header__shop > div::after {
+    -webkit-transform: translate(-45%, 10%);
+            transform: translate(-45%, 10%);
+  }
 }
 .header .header__shop:hover > div > img {
   -webkit-animation: shop 1s linear;
