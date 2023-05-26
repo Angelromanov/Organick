@@ -483,16 +483,16 @@ body {
   opacity: 0;
   top: -25%;
   left: -50%;
-  -webkit-transform: translate(-25%, 10%);
-          transform: translate(-25%, 10%);
+  -webkit-transform: translate(-30%, 10%);
+          transform: translate(-30%, 10%);
 }
-.header .header__shop > div:hover > img {
+.header .header__shop:hover > div > img {
   -webkit-animation: shop 1s linear;
           animation: shop 1s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.header .header__shop > div:hover::after {
+.header .header__shop:hover > div::after {
   -webkit-animation: shopGo 1s linear;
           animation: shopGo 1s linear;
   -webkit-animation-fill-mode: forwards;

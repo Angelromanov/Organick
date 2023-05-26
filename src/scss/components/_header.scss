@@ -120,17 +120,17 @@
                 opacity: 0;
                 top: -25%;
                 left: -50%;
-                transform: translate(-25%, 10%);
+                transform: translate(-30%, 10%);
             }
-            &:hover{
-                & > img{
-                    animation: shop 1s linear;
-                    animation-fill-mode: forwards;
-                }
-                &::after{
-                    animation: shopGo 1s linear;
-                    animation-fill-mode: forwards;
-                }
+        }
+        &:hover{
+            > div > img{
+                animation: shop 1s linear;
+                animation-fill-mode: forwards;
+            }
+            > div::after{
+                animation: shopGo 1s linear;
+                animation-fill-mode: forwards;
             }
         }
         .header__size-shop{
