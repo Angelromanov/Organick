@@ -129,6 +129,7 @@
             align-items: center;
             gap: 24px;
             padding: 22px 9px 22px 33px;
+            transition: all 0.5s linear;
             @media (max-width:1024px) {
                 margin: auto;
             }
@@ -137,6 +138,7 @@
             }
             .link{
                 color: $white;
+                transition: all 0.5s linear;
             }
             > div{
                 position: relative;
@@ -144,11 +146,22 @@
                 width: 38px;
                 background: $light-green-blue;
                 border-radius: 50%;
+                transition: all 0.5s linear;
                 > img{
                     position: relative;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                }
+            }
+            &:hover{
+                background: $gold;
+                border: 1px solid  $gold;
+                & > span{
+                    color: $green-blue;
+                }
+                > div{
+                    background: $green-blue;
                 }
             }
         }

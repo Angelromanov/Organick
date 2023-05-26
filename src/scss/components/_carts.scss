@@ -7,6 +7,7 @@
             padding-bottom: 5px;
         }
         .description{
+            position: relative;
             display: inline-block;
             border-radius: 8px;
             font-weight: 700;
@@ -15,9 +16,28 @@
             background-color: $green-blue;
             padding: 5px 20px;
             color: $white;
+            transition: all 0.5s linear;
+            z-index: 1;
+            &:hover{
+                background-color: $white;
+                color: $green-blue;
+            }
         }
-        a>img{
+        :nth-child(2){
+            transition: all 0.5s linear;
+            &:hover{
+                >img{
+                    transform: scale(110%);
+                }
+                .name{
+                    color: $green;
+                }
+            }
+        }
+        a > img{
+            transition: all 0.5s linear;
             margin-bottom: 20px;
+            position: relative;
         }
         .name{
             font-size: 22px;

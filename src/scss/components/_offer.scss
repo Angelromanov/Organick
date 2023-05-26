@@ -33,17 +33,32 @@
             align-items: center;
             gap: 22px;
             padding: 22px 9px 22px 33px;
+            transition: all 0.5s linear;
+            > span{
+                transition: all 0.5s linear;
+            }
             > div{
                 position: relative;
                 height: 38px;
                 width: 38px;
                 background: $green-blue;
                 border-radius: 50%;
+                transition: all 0.5s linear;
                 > img{
                     position: relative;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                }
+            }
+            &:hover{
+                background: $green-blue;
+                border: 1px solid  $light-green-blue;
+                & > span{
+                    color: $white;
+                }
+                > div{
+                    background: $light-green-blue;
                 }
             }
         }

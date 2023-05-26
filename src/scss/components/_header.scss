@@ -15,7 +15,7 @@
     .menu__btn {
         background-color: $green-blue;
         border-radius: 50%;
-        align-items: center; 
+        align-items: center;
         position: fixed;
         right: 20px;
         width: 35px;
@@ -110,6 +110,27 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+            &::after{
+                content: 'GO!';
+                color: $white;
+                display: block;
+                position: relative;
+                font-size: 20px;
+                opacity: 0;
+                top: -25%;
+                left: -50%;
+                transform: translate(-25%, 10%);
+            }
+            &:hover{
+                & > img{
+                    animation: shop 1s linear;
+                    animation-fill-mode: forwards;
+                }
+                &::after{
+                    animation: shopGo 1s linear;
+                    animation-fill-mode: forwards;
+                }
             }
         }
         .header__size-shop{

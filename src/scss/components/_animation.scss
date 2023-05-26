@@ -1,0 +1,25 @@
+@keyframes shop{
+    0%{
+        left: 75%;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 125%;
+        opacity: 0;
+    }
+}
+
+@keyframes shopGo{
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 25%;
+    }
+    100%{
+        left: 50%;
+        opacity: 1;
+    }
+}

@@ -46,6 +46,10 @@
                             font-weight: 400;
                             line-height: 29px;
                             white-space: nowrap;
+                            transition: all 0.5s linear;
+                            &:hover{
+                                color: $green;
+                            }
                         }
                     }
                     .email .link{
@@ -85,7 +89,10 @@
                         padding: 20px;
                         background: #EFF6F1;
                         border-radius: 100px;
-
+                        transition: all 0.5s linear;
+                        &:hover{
+                            background: $bg-circle;
+                        }
                     }
                     @media (max-width:1024px){
                         flex-wrap: wrap;
@@ -113,6 +120,10 @@
                             color: $gray;
                             margin-bottom: 20px;
                             white-space: nowrap;
+                            transition: all 0.5s linear;
+                            &:hover{
+                                color: $green;
+                            }
                         }
                     }
                 }

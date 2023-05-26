@@ -14,7 +14,11 @@
             }
             .nav__link{
                 white-space: nowrap;
+                transition: all 0.5s linear;
                 &.active{
+                    color: $green;
+                }
+                &:hover{
                     color: $green;
                 }
             }

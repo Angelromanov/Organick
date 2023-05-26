@@ -56,6 +56,11 @@
             border-radius: 20px;
             padding: 30px 78px;
             font-weight: 700;
+            transition: all 0.5s linear;
+            &:hover{
+                background-color: $light-green-blue;
+                color: $white;
+            }
             @media (max-width:1024px) {
                 padding: 20px 48px;
             }
