@@ -63,6 +63,7 @@ body{
     letter-spacing: 0.36px;
     color: $green-blue;
     text-transform: capitalize;
+    white-space: nowrap;
     @media (max-width:376px){
         font-size: 16px;
         line-height: 20px;

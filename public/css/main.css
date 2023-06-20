@@ -151,6 +151,7 @@ body {
   letter-spacing: 0.36px;
   color: #274C5B;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 @media (max-width: 376px) {
   .link {
@@ -360,6 +361,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  top: 37px;
   right: 20px;
   width: 35px;
   height: 35px;
@@ -467,6 +469,7 @@ body {
   width: 56px;
   background: #274C5B;
   border-radius: 50%;
+  overflow: hidden;
 }
 .header .header__shop > div > img {
   position: relative;
@@ -566,6 +569,7 @@ body {
   padding: 220px 0 250px;
   background: url(../images/bg-header.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media (max-width: 1024px) {
   .home {
@@ -1302,6 +1306,8 @@ body {
 }
 
 .eco {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 39px 0;
   background: url(../images/bg-eco.png) no-repeat;
 }
@@ -1452,6 +1458,7 @@ body {
   background: url(../images/form.png) no-repeat;
   background-size: cover;
   padding: 100px 70px;
+  border-radius: 30px;
 }
 @media (max-width: 1024px) {
   .forms .flex-wrap {
@@ -1683,7 +1690,7 @@ body {
 .footer .footer-wrap__item:first-child .title {
   font-size: 30px;
   line-height: 42px;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 .footer .footer-wrap__item:first-child .contacts {
   display: -webkit-box;
@@ -1766,7 +1773,7 @@ body {
 }
 .footer .footer-wrap__item:nth-child(2) .logo {
   padding: 0;
-  padding-bottom: 44px;
+  padding-bottom: 45px;
 }
 .footer .footer-wrap__item:nth-child(2) .description {
   max-width: 567px;
@@ -1834,7 +1841,7 @@ body {
 .footer .footer-wrap__item:last-child .title {
   white-space: nowrap;
   font-size: 30px;
-  line-height: 42px;
+  line-height: 43px;
   margin-bottom: 20px;
 }
 .footer iframe {
