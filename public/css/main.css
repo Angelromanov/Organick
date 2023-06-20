@@ -569,7 +569,6 @@ body {
   padding: 220px 0 250px;
   background: url(../images/bg-header.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
 }
 @media (max-width: 1024px) {
   .home {
@@ -1458,7 +1457,7 @@ body {
   background: url(../images/form.png) no-repeat;
   background-size: cover;
   padding: 100px 70px;
-  border-radius: 30px;
+  border-radius: 0px;
 }
 @media (max-width: 1024px) {
   .forms .flex-wrap {

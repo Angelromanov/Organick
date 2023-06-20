@@ -4,7 +4,7 @@
         background: url(../images/form.png) no-repeat;
         background-size: cover;
         padding: 100px 70px;
-        border-radius: 30px;
+        border-radius: 0px;
         @media (max-width:1024px) {
             flex-direction: column;
             justify-content: center;
@@ -43,9 +43,6 @@
             line-height: 29px;
             letter-spacing: 0.36px;
             color: $gray;
-            &:focus{
-                
-            }
             &::placeholder{
                 font-family: 'Open Sans';
                 font-style: normal;
