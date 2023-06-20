@@ -1457,7 +1457,7 @@ body {
   background: url(../images/form.png) no-repeat;
   background-size: cover;
   padding: 100px 70px;
-  border-radius: 0px;
+  border-radius: 30px;
 }
 @media (max-width: 1024px) {
   .forms .flex-wrap {
